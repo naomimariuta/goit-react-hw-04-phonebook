@@ -1,0 +1,17 @@
+.item {
+  background-color: white;
+  margin: 20px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.item:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
