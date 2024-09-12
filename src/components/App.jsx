@@ -6,6 +6,7 @@ import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid';
 import storage from './service/storage';
 
+//cod refacut cu hooks
 const App = () => {
   const [contacts, setContacts] = useState([]);
   const [filter, setFilter] = useState('');
