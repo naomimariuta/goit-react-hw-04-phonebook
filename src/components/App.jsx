@@ -6,7 +6,6 @@ import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid';
 import storage from './service/storage';
 
-//cod refacut cu hooks
 const App = () => {
   const [contacts, setContacts] = useState([]);
   const [filter, setFilter] = useState('');
@@ -41,11 +40,11 @@ const App = () => {
   };
 
   const handleFilter = event => {
-    const { value } = event.target;
-    setFilter(value);
+    setFilter(event.target.value);
   };
 
   const handleDelete = contactId => {
+    console.log('i am here in delete');
     setContacts(prevContacts =>
       prevContacts.filter(contact => contact.id !== contactId)
     );
